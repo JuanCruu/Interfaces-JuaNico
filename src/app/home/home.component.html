@@ -9,12 +9,18 @@
         <div class="mb-5">
             <p class="mb-2 subtitle">Lugares mejor valorados:</p>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner double">
                     <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
                         <div class="d-flex justify-content-around">
                             <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
                             <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
-                            <app-card [lugar]="lugar[2]" class="mx-3"></app-card>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-inner simple">
+                    <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of lugares; let i=index">
+                        <div class="d-flex justify-content-around">
+                            <app-card [lugar]="lugar" class="mx-3"></app-card>
                         </div>
                     </div>
                 </div>
@@ -36,24 +42,24 @@
             <p class="mb-2 subtitle">Algunos lugares de interes:</p>
             <div class="row d-flex justify-content-around mb-4">
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[0]"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[1]"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[2]"></app-card-lugares-interes>
                 </div>
             </div>
             <div class="row d-flex justify-content-around">
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[3]"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[4]"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[5]"></app-card-lugares-interes>
                 </div>
             </div>
         </div>
