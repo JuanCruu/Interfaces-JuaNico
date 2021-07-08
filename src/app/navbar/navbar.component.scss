@@ -1,0 +1,35 @@
+.back-nav {
+    background-color: #1F5754;
+}
+
+.item-nav * {
+    color: #E5FFCB;
+}
+
+.item-deco {
+    text-decoration: underline;
+}
+
+.nav-icon {
+    font-size: larger;
+    margin-left: 0.25vw;
+}
+
+.box-icon {
+    font-size: 40px;
+}
+
+.notification * {
+    color: #232F3E;
+}
+
+.notif {
+    background-color: #EA9A00 !important;
+    padding: .4rem;
+}
+
+@media (max-width: 600px) {
+    #searchNav {
+        display: none;
+    }
+}

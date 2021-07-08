@@ -1,0 +1,33 @@
+footer {
+    height: 99px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer p {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: -0.011em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.copyright {
+    margin-top: 35px;
+}
+
+.box-icon {
+    font-size: 60px;
+    margin: 90px;
+}
+
+fa-icon {
+    cursor: pointer;
+    color: #E5FFCB;
+}

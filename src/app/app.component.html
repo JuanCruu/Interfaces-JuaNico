@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+
+<footer class="fixed-bottom">
+    <div>
+        <fa-icon [icon]="['fab', 'airbnb']" class="box-icon" [routerLink]="['/']"></fa-icon>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2021 Juan Cruz Navarro y Nicolas Erasun, todos los derechos reservados.</p>
+    </div>
+    <div>
+        <fa-icon [icon]="['fas', 'angle-up']" (click)="GoUp()" class="box-icon"></fa-icon>
+    </div>
+</footer>
