@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    height: 100%
+}
+
+.fondo {
+    background-image: url(https://i.imgur.com/r7xxRBb.png);
+}
+
+.box {
+    background-color: #303030;
+    color: white;
+}
+
+.boton {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #1F5754;
+    border-radius: 12px;
+    // font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    /* identical to box height, or 109% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+label {
+    // font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    // display: flex;
+    // align-items: center;
+    letter-spacing: -0.011em;
+    /* verde manzana -2 */
+    color: #E5FFCB;
+}
+
+h1 {
+    color: #43A9A3;
+}
+
+h2 {
+    color: #E5FFCB;
+}
+
+fieldset {
+    background-color: #303030;
+    height: 29rem;
+}
+
+input {
+    text-align: star;
+    padding: 10px;
+    border-radius: 10px;
+    height: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.campo-final {
+    display: flex;
+    justify-content: center;
+    // max-width: 400px;
+    background-color: red;
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #43A9A3
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 12px;
+    width: 25%;
+    float: left;
+    position: relative
+}
+
+#progressbar #account:before {
+    // font-family: "Font Awesome 5 Free";
+    content: "1"
+}
+
+#progressbar #personal:before {
+    // font-family: FontAwesome;
+    content: "2"
+}
+
+#progressbar #payment:before {
+    // font-family: FontAwesome;
+    content: "3"
+}
+
+#progressbar #confirm:before {
+    // font-family: FontAwesome;
+    content: "4"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    transition: 1s;
+    background: #43A9A3
+}
+
+.radio-group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.radio {
+    display: inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 8px 2px
+}
+
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1)
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.box-icon {
+    font-size: 90px;
+    color: #43A9A3;
+}

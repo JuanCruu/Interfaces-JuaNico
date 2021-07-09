@@ -21,6 +21,7 @@ import { CardProductoBusquedaComponent } from './card-producto-busqueda/card-pro
 import { CardAnfitrionComponent } from './card-anfitrion/card-anfitrion.component';
 import { ReseniaComponent } from './resenia/resenia.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ComentariosComponent } from './comentarios/comentarios.component';
     CardProductoBusquedaComponent,
     CardAnfitrionComponent,
     ReseniaComponent,
-    ComentariosComponent
+    ComentariosComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
