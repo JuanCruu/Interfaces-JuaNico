@@ -1,10 +1,120 @@
 <div class="container row mx-auto">
-    <div class="col-3">
-        a
+    <div class="row mt-3 mb-2">
+        <h1>Resultados de:</h1>
+        <p class="badge badge-busqueda mt-3">Con Agua <span class="text-light">X</span></p>
+        <p class="badge badge-busqueda mt-3">2 Personas <span class="text-light">X</span></p>
     </div>
+    <section class="col-3 filtros">
+        <p class="filter-title mt-2 ml-2">Filtros:</p>
+        <ul>
+            <li class="mb-2">
+                <p class="my-0 filter-subtitle">Valor:</p>
+                <ul class="my-0">
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Hasta 3.500$</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Hasta 5.000$</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Mas de 5,000$</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-2">
+                <p class="my-0 filter-subtitle">Pais:</p>
+                <ul class="my-0">
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Peru</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Argentina</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Brasil</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-2">
+                <p class="my-0 filter-subtitle">Tipo:</p>
+                <ul class="my-0">
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Casa</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Cabaña</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Habitacion</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id=""><span>Sofa</span>
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-2">
+                <p class="my-0 filter-subtitle">Fechas Disponibles:</p>
+                <ul class="row mt-1">
+                    <li>
+                        <label for="Desde" class="mt-1">Desde:</label>
+                        <input type="date" class="col-12 rounded" name="" id="">
+                    </li>
+                    <li>
+                        <label for="Hasta" class="mt-1">Hasta:</label>
+                        <input type="date" class="col-12 rounded" name="" id="">
+                    </li>
+                </ul>
+            </li>
+            <li class="mb-2">
+                <p class="my-0 filter-subtitle">Estrellas:</p>
+                <ul class="my-0">
+                    <li class="d-flex align-items-center mt-1">
+                        <input type="checkbox" name="" id="">
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                    </li>
+                    <li class="d-flex align-items-center mt-1">
+                        <input type="checkbox" name="" id="">
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                    </li>
+                    <li class="d-flex align-items-center mt-1">
+                        <input type="checkbox" name="" id="">
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                    </li>
+                    <li class="d-flex align-items-center mt-1">
+                        <input type="checkbox" name="" id="">
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                    </li>
+                    <li class="d-flex align-items-center mt-1">
+                        <input type="checkbox" name="" id="">
+                        <fa-icon [icon]="['fas', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                        <fa-icon [icon]="['far', 'star']"></fa-icon>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-aplicar my-3 float-end">Aplicar</button>
+    </section>
     <div class="col">
-        <div class="col" *ngFor="let lugar of lugares">
-            <!-- <app-card [lugar]="lugar"></app-card> -->
+        <div class="col mb-5" *ngFor="let lugar of lugares">
             <app-card-producto-busqueda [lugar]="lugar"></app-card-producto-busqueda>
         </div>
     </div>

@@ -13,16 +13,16 @@ export class HomeComponent implements OnInit {
     {
       titulo: "Departamento entero",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 26,
+      precio: 4500,
       valoracion: [true, true, true, true, true],
-      imagen: "https://static1.sosiva451.com/8037839/767d218c-49c7-430a-a55d-63b1b1b71f18_u_small.jpg",
-      oferta: false,
+      imagen: "../../assets/dpto.png",
+      oferta: true,
       tipo: "busqueda"
     },
     {
       titulo: "Cabana con playa",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 260,
+      precio: 5600,
       valoracion: [true, true, true, true, true],
       imagen: "../../assets/silla.png",
       oferta: false,
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
     {
       titulo: "Departamento entero",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 26,
+      precio: 2600,
       valoracion: [true, true, true, true, true],
       imagen: "../../assets/playa.png",
       oferta: false,
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     {
       titulo: "Departamento entero",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 26,
+      precio: 3400,
       valoracion: [true, true, true, true, true],
       imagen: "../../assets/pileta.png",
       oferta: false,
@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
     {
       titulo: "Departamento entero",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 26,
+      precio: 1200,
       valoracion: [true, true, true, true, true],
       imagen: "../../assets/pileta2.png",
       oferta: false,
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
     {
       titulo: "Departamento entero",
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
-      precio: 26,
+      precio: 8500,
       valoracion: [true, true, true, true, true],
       imagen: "../../assets/casa.png",
       oferta: false,
