@@ -15,7 +15,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
       precio: 4500,
       valoracion: [true, true, true, true, true],
-      imagen: "../../assets/dpto.png",
+      imagen: "https://i.imgur.com/IO7gSOE.png",
       oferta: true,
       tipo: "busqueda"
     },
@@ -24,7 +24,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Excelente departamento de excelente diseño totalmente reciclado, excelente vistas de la ciudad, muy buena ubicación, a metros del mar, del centro comercial Guemes, del Cacino, del Hotel Hermitage, Provincial y Museo Castagnino. Ideal para desplazarse caminando a todos los lugares, sin necesidad de...",
       precio: 5600,
       valoracion: [true, true, true, true, true],
-      imagen: "../../assets/silla.png",
+      imagen: "https://i.imgur.com/Tx0OWEY.png",
       oferta: false,
       tipo: "busqueda"
     },
@@ -33,7 +33,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona residencial y tranquila para ...",
       precio: 2600,
       valoracion: [true, true, true, true, true],
-      imagen: "../../assets/playa.png",
+      imagen: "https://i.imgur.com/oImaGvk.png",
       oferta: false,
       tipo: "busqueda"
     },
@@ -42,7 +42,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Disfrutá de la sencillez de este alojamiento tranquilo y céntrico. Muy luminoso, confortable y con todos los servicios. Excelente ubicación, a 50 mts. de Plaza Mitre, y a 500 mts. del shopping y de la Peatonal. Importante: a 100 mts el estacionamiento es libre y gratuito en la calle. Hay estacionamiento de pago cerca ...",
       precio: 3400,
       valoracion: [true, true, true, true, true],
-      imagen: "../../assets/pileta.png",
+      imagen: "https://i.imgur.com/g6GouLj.png",
       oferta: false,
       tipo: "busqueda"
     },
@@ -51,7 +51,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Dpto con pileta",
       precio: 1200,
       valoracion: [true, false, false, false, false],
-      imagen: "../../assets/pileta2.png",
+      imagen: "https://i.imgur.com/1CaX5G8.png",
       oferta: false,
       tipo: "busqueda"
     },
@@ -60,7 +60,7 @@ export class BusquedaComponent implements OnInit {
       descripcion: "Mansion playboy con todos los servicios. Cuenta con salon de juegos, casino privado, pileta y salida para lanchas y embarcaciones privada.",
       precio: 8500,
       valoracion: [true, true, true, true, true],
-      imagen: "../../assets/casa.png",
+      imagen: "https://i.imgur.com/Y5UHut6.png",
       oferta: false,
       tipo: "busqueda"
     }
