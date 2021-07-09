@@ -66,12 +66,34 @@ export class BusquedaComponent implements OnInit {
     }
   ];
 
+  busquedas: string[] = [];
+
   constructor(private searchService: SearchService) { }
 
   ngOnInit(): void {
+    if(this.getSearch()[0] != "")
+      this.busquedas = this.getSearch();
   }
   
-  getSearch(): string{
-    return this.searchService.getSearch();
+  getSearch(): string[]{
+    let splitArr = this.searchService.getSearch().split(',');
+    return splitArr;
+  }
+
+  reverse(): void{
+    let list = document.querySelector("#resultados");
+    let clases = list?.classList;
+    if(clases?.contains("flex-column")){
+      list?.classList.remove("flex-column");
+      list?.classList.add("flex-column-reverse");
+    } else {
+      list?.classList.remove("flex-column-reverse");
+      list?.classList.add("flex-column");
+    }
+  }
+
+  remove(e: string){
+    this.busquedas.indexOf(e);
+    this.busquedas = this.busquedas.filter(busqueda => busqueda !== e);
   }
 }

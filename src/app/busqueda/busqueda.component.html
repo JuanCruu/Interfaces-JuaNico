@@ -1,8 +1,7 @@
 <div class="container row mx-auto">
     <div class="row mt-3 mb-2">
-        <h1>Resultados de:</h1>
-        <p class="badge badge-busqueda mt-3">Con Agua <span class="text-light">X</span></p>
-        <p class="badge badge-busqueda mt-3">2 Personas <span class="text-light">X</span></p>
+        <h1>Resultados <span [ngClass]="{'d-none' : busquedas.length === 0}">de</span>:</h1>
+        <p class="badge badge-busqueda mt-3" [ngClass]="{'invisible' : busquedas.length === 0}" *ngFor="let busqueda of busquedas">{{busqueda}} <span class="text-light delete-filter" (click)="remove(busqueda)">X</span></p>
     </div>
     <section class="col-3 filtros">
         <p class="filter-title mt-2 ml-2">Filtros:</p>
@@ -111,11 +110,11 @@
                 </ul>
             </li>
         </ul>
-        <button type="button" class="btn btn-aplicar my-3 float-end">Aplicar</button>
+        <button type="button" class="btn btn-aplicar my-3 float-end" (click)="reverse()">Aplicar</button>
     </section>
-    <div class="col">
-        <div class="col mb-5" *ngFor="let lugar of lugares">
-            <app-card-producto-busqueda [lugar]="lugar"></app-card-producto-busqueda>
+    <div class="col d-flex flex-column-reverse" id="resultados">
+        <div class="col mb-4" *ngFor="let lugar of lugares">
+            <app-card-producto-busqueda [lugar]="lugar" [routerLink]="['/detalle']"></app-card-producto-busqueda>
         </div>
     </div>
 </div>

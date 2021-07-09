@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row d-flex col-11 mx-auto">
         <app-carrousel class="my-5"></app-carrousel>
-        <app-card-anfitrion class="mb-5"></app-card-anfitrion>
+        <app-card-anfitrion class="mb-5" [routerLink]="['/detalle']"></app-card-anfitrion>
         <div class="mb-5">
             <p class="mb-2 subtitle">No dejes pasar esta oferta:</p>
             <app-card-producto-busqueda [lugar]="valorados[0][0]"></app-card-producto-busqueda>
@@ -12,15 +12,15 @@
                 <div class="carousel-inner double">
                     <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
                         <div class="d-flex justify-content-around">
-                            <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
-                            <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
+                            <app-card [lugar]="lugar[0]" class="mx-3" [routerLink]="['/detalle']"></app-card>
+                            <app-card [lugar]="lugar[1]" class="mx-3" [routerLink]="['/detalle']"></app-card>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-inner simple">
                     <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of lugares; let i=index">
                         <div class="d-flex justify-content-around">
-                            <app-card [lugar]="lugar" class="mx-3"></app-card>
+                            <app-card [lugar]="lugar" class="mx-3" [routerLink]="['/detalle']"></app-card>
                         </div>
                     </div>
                 </div>
@@ -42,24 +42,24 @@
             <p class="mb-2 subtitle">Algunos lugares de interes:</p>
             <div class="row d-flex justify-content-around mb-4">
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[0]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[0]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[1]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[1]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[2]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[2]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
             </div>
             <div class="row d-flex justify-content-around">
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[3]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[3]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[4]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[4]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
                 <div class="col">
-                    <app-card-lugares-interes [lugar]="lugaresInteres[5]"></app-card-lugares-interes>
+                    <app-card-lugares-interes [lugar]="lugaresInteres[5]" [routerLink]="['/busqueda']"></app-card-lugares-interes>
                 </div>
             </div>
         </div>
