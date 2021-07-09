@@ -1,26 +1,69 @@
 <div class="container">
     <div class="row d-flex col-11 mx-auto">
-        <app-carrousel class="my-2"></app-carrousel>
-        <app-card-anfitrion></app-card-anfitrion>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
-                    <div class="d-flex justify-content-around">
-                        <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
-                        <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
-                        <app-card [lugar]="lugar[2]" class="mx-3"></app-card>
+        <app-carrousel class="my-5"></app-carrousel>
+        <app-card-anfitrion class="mb-5"></app-card-anfitrion>
+        <div class="mb-5">
+            <p class="mb-2 subtitle">No dejes pasar esta oferta:</p>
+            <app-card-producto-busqueda [lugar]="valorados[0][0]"></app-card-producto-busqueda>
+        </div>
+        <div class="mb-5">
+            <p class="mb-2 subtitle">Lugares mejor valorados:</p>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner double">
+                    <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
+                        <div class="d-flex justify-content-around">
+                            <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
+                            <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
+                        </div>
                     </div>
                 </div>
+                <div class="carousel-inner simple">
+                    <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of lugares; let i=index">
+                        <div class="d-flex justify-content-around">
+                            <app-card [lugar]="lugar" class="mx-3"></app-card>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <div class="bg-success rounded-pill d-flex align-items-center justify-content-center" style="width: 2.5em; height: 2.5em;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </div>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <div class="bg-success rounded-pill d-flex align-items-center justify-content-center" style="width: 2.5em; height: 2.5em;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </div>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
         </div>
+        <div class="mb-5">
+            <p class="mb-2 subtitle">Algunos lugares de interes:</p>
+            <div class="row d-flex justify-content-around mb-4">
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[0]"></app-card-lugares-interes>
+                </div>
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[1]"></app-card-lugares-interes>
+                </div>
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[2]"></app-card-lugares-interes>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-around">
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[3]"></app-card-lugares-interes>
+                </div>
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[4]"></app-card-lugares-interes>
+                </div>
+                <div class="col">
+                    <app-card-lugares-interes [lugar]="lugaresInteres[5]"></app-card-lugares-interes>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </div>

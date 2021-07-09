@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Lugar } from '../Lugar';
 
 @Component({
   selector: 'app-card-lugares-interes',
@@ -7,33 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardLugaresInteresComponent implements OnInit {
 
-    lugares=[
-    {
-      nombre:"Montañas",
-      imagen:"https://aventuravertical.com/wp-content/uploads/2019/12/monta%C3%B1as-de-mexico.jpg"
-    },
-    {
-      nombre:"playas",
-      imagen:""
-    },  {
-      nombre:"bosques",
-      imagen:""
-    },  {
-      nombre:"turismo",
-      imagen:""
-    },  {
-      nombre:"ciudad",
-      imagen:""
-    },{
-      nombre:"polares",
-      imagen:""
-    }
-];
+  @Input()
+  lugar: Lugar = {
+    nombre:'',
+    imagen:''
+  }
+
   constructor() { 
-  
-    
-      
-    
   }
   
   ngOnInit(): void {

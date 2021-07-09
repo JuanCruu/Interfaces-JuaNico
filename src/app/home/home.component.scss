@@ -1,0 +1,16 @@
+.subtitle {
+    font-size: 2rem;
+}
+
+.simple {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .simple {
+        display: block;
+    }
+    .double {
+        display: none;
+    }
+}
