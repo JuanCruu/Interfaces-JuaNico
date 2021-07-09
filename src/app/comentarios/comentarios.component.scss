@@ -12,6 +12,10 @@ body {
     line-height: 3px
 }
 
+.round img {
+    border-radius: 100%
+}
+
 .comments {
     text-decoration: underline;
     text-underline-position: under;
@@ -29,4 +33,106 @@ body {
 
 .hit-voting:hover {
     color: blue
+}
+
+.card-no-border .card {
+    border: 0px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05)
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem
+}
+
+.box-resenia {
+    // border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(180, 180, 180);
+    padding-top: 10px !important // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // border-radius: 10px;
+}
+
+.text-card {
+    font-size: 21px;
+}
+
+span {
+    color: grey;
+}
+
+.comment-widgets .comment-row:hover {
+    background: #d5fdac;
+    cursor: pointer
+}
+
+.comment-widgets .comment-row {
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+    padding: 15px;
+    margin: 10px;
+}
+
+.comment-text {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comment-text:hover {
+    visibility: visible
+}
+
+.star {
+    color: #EA9A00;
+}
+
+.round img {
+    border-radius: 100%
+}
+
+.mt-100 {
+    margin-top: 100px
+}
+
+.mb-100 {
+    margin-bottom: 100px
+}
+
+.imagen-comentar {
+    margin: 10px;
+}
+
+.imagen-comentario {
+    display: flex;
+    text-align: center;
+}
+
+// .imagen-comentario img {
+//     object-fit: contain;
+// }
+.boton {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #1F5754;
+    border-radius: 12px;
+    // font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    /* identical to box height, or 109% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.form-control {
+    margin-left: 15px;
+    height: 4rem;
 }
