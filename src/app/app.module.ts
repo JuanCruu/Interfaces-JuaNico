@@ -22,6 +22,7 @@ import { CardAnfitrionComponent } from './card-anfitrion/card-anfitrion.componen
 import { ReseniaComponent } from './resenia/resenia.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { RegistroComponent } from './registro/registro.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +39,8 @@ import { RegistroComponent } from './registro/registro.component';
     CardAnfitrionComponent,
     ReseniaComponent,
     ComentariosComponent,
-    RegistroComponent
-   
+    RegistroComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,

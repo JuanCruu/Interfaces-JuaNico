@@ -19,6 +19,7 @@ export class SearchBarComponent implements OnInit {
   changeInput(e: string){
     this.input_busqueda = e;
   }
+  
   search(){
     this.searchService.search(this.input_busqueda);
     this.busqueda.emit(this.input_busqueda);

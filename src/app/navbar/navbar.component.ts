@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +12,9 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   } 
 
-  userLogged: boolean = true;
+  userLogged: boolean = false;
+
+  login(): void{
+    this.userLogged = true;
+  }
 }
