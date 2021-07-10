@@ -22,10 +22,10 @@
                     </a>
                 </li>
                 <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
-                    <a class="nav-link active bg-secondary rounded" aria-current="page" href="#">Registrarse</a>
+                    <a class="nav-link active bg-secondary rounded" aria-current="page" [routerLink]="['/registro']">Registrarse</a>
                 </li>
                 <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
-                    <a class="nav-link active bg-dark rounded" aria-current="page" href="#">Iniciar Sesion</a>
+                    <a class="nav-link active bg-dark rounded" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item dropdown item-nav m-auto" *ngIf=userLogged>
                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,6 +47,41 @@
                 </li>
             </ul>
 
+        </div>
+    </div>
+    <!-- <app-log-in [navLogin]="login"></app-log-in> -->
+    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mt-5">
+            <div class="modal-content fondoscuro">
+                <div class="col mx-auto my-3 p-0">
+                    <h5 class="modal-title mx-auto text-center" id="staticBackdropLabel">Iniciar Sesion</h5>
+                    <h5 class="modal-subtitle mx-auto text-center" id="staticBackdropLabel">Airbnb</h5>
+                </div>
+                <div class="modal-body">
+                    <label for="user" class="form-label">Usuario</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Usuario" aria-describedby="basic-addon1">
+                    </div>
+                    <label for="pass" class="form-label">Contraseña</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1">
+                    </div>
+                    <p class="col my-0 p-0">Olvidastes tu contraseña?</p>
+
+                </div>
+                <div class="row my-3">
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn p-1 col-3 text-center" (click)="login()" data-bs-dismiss="modal">Ingresar</button>
+                    </div>
+                    <div class="col-11 my-2 mx-auto">
+                        <p class="my-0 p-0 text-center">Si aun no tenes una cuenta</p>
+                        <hr class="my-0 p-0 dropdown-divider w-100">
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <button type="button" class="btn p-1 col-3 text-center" [routerLink]="['/registro']">Registrate</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
