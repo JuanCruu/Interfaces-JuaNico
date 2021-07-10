@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
    step=1;
+
+   Nombre="Gonzales";
+   Apellido="Gonzales";
+   Mail="@gonza.mail";
+   Nacimiento=13;
+   Ciudad="alguna";
+   Direccion="estrada laprida";
+   MetododePago="s";
+
    bar=document.getElementById('progressbar');
    
   constructor() { }

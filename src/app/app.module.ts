@@ -39,6 +39,7 @@ import { RegistroComponent } from './registro/registro.component';
     ReseniaComponent,
     ComentariosComponent,
     RegistroComponent
+   
   ],
   imports: [
     BrowserModule,

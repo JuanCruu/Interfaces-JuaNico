@@ -8,6 +8,7 @@
                     <div class="col-md-12 mx-0">
                         <form>
                             <!-- progressbar -->
+                            <h1><strong>Registro {{step}}/4</strong></h1>
                             <ul id="progressbar" class="pt-5">
                                 <li class="active" id="account"><strong>Datos de Usuario</strong></li>
                                 <li id="personal" [ngClass]="{'active':step>=2}"><strong>Informacion Personal</strong></li>
@@ -15,7 +16,7 @@
                                 <li id="confirm" [ngClass]="{'active':step>=4}"><strong>finalizar</strong></li>
                             </ul>
                             <div class=" ">
-                                <h1><strong>Registro {{step}}/4</strong></h1>
+
                                 <!-- paso 1 -->
                                 <fieldset *ngIf="step==1 ">
                                     <div class="form-card ">
@@ -39,11 +40,15 @@
                                             <input class=" " type="email " name="email " id="Mail " />
                                         </div>
                                         <div class="row col-10 d-flex mx-auto ">
-                                            <label for="contra " class="col-8 text-start ">Contraseña</label>
-                                            <input type="password " name="pwd " id="contra " />
+                                            <label for="contra" class="col-8 text-start ">Contraseña
+                                            <span class="dalee"> <fa-icon [icon]="['fas', 'question-circle']"  > </fa-icon> </span>
+                                            
+                                        
+                                        </label>
+                                            <input type="password" name="pwd " id="contra " />
                                         </div>
                                         <div class="mt-4 ">
-                                            <button class="boton " (click)="next() ">Siguiente</button>
+                                            <button class="boton" (click)="next() ">Siguiente</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -58,27 +63,32 @@
                                         <div class="row justify-content-around ">
                                             <div class="col-6 ">
                                                 <label for="nombre " class="col-8 text-start ">Nacimiento</label>
-                                                <input type="date " id="nombre " class="col-8 " name="uname " />
+                                                <input type="date" id="nombre " class="col-8 " name="uname " />
                                             </div>
                                             <div class="col-6 ">
                                                 <label for="nombre " class="col-8 text-start ">Genero</label>
-                                                <input type=" text " id="Apellido " class="col-8 " name="uname " />
+                                                <input type=" text" id="Apellido " class="col-8 " name="uname " />
                                             </div>
                                         </div>
                                         <div class="row justify-content-around ">
                                             <div class="col-6 ">
                                                 <label for="nombre " class="col-8 text-start ">Ciudad</label>
-                                                <input type="text " id="nombre " class="col-8 " name="uname " />
+                                                <input type="text" id="nombre " class="col-8 " name="uname " />
                                             </div>
                                             <div class="col-6 ">
 
                                                 <label for="nombre " class="col-8 text-start ">Cod.Postal</label>
-                                                <input type="number " id="Apellido " class="col-8 " name="uname " />
+                                                <input type="number" id="Apellido " class="col-8 " name="uname " />
                                             </div>
                                         </div>
                                         <div class="row col-10 d-flex mx-auto ">
-                                            <label for="contra " class="col-8 text-start ">Contraseña</label>
-                                            <input type="password " name="pwd " id="contra " />
+                                            <label for="contra " class="col-8 text-start ">Contraseña
+                                                <span>
+                                                
+                                                    <fa-icon [icon]="['fas', 'question-circle']" class="contraSimbolo> "> </fa-icon>
+                                                </span>
+                                            </label>
+                                            <input type="password" name="pwd " id="contra " />
                                         </div>
 
                                     </div>
@@ -110,18 +120,18 @@
 
                                             <div class="row col-10 d-flex mx-auto ">
                                                 <label for="contra " class="col-8 text-start ">Numero de Tarjeta</label>
-                                                <input type="number " name="pwd " id="contra " />
+                                                <input type="number" name="pwd " id="contra " />
                                             </div>
                                             <div class="row justify-content-around ">
 
                                                 <div class="col-6 ">
                                                     <label for="nombre " class="col-8 text-start ">Vencimiento</label>
-                                                    <input type="date " id="nombre " class="col-8 " name="uname " />
+                                                    <input type="date" id="nombre " class="col-8 " name="uname " />
                                                 </div>
                                                 <div class="col-6 ">
 
                                                     <label for="nombre " class="col-8 text-start ">CVV</label>
-                                                    <input type="number " id="Apellido " class="col-8 " name="uname " />
+                                                    <input type="number" id="Apellido " class="col-8 " name="uname " placeholder="Ejemplo 123" />
                                                 </div>
                                             </div>
 
@@ -145,25 +155,31 @@
 
 
                                 <fieldset *ngIf="step==4 ">
-                                    <div class="form-card ">
-                                        <h2 class=" text-center ">Solo falta que agregues una foto</h2> <br><br>
+                                    <div class="titulo-card pb-4 ">
+                                        <h2><strong>Solo falta que agregues una foto</strong></h2>
+                                        <span class="justify-content-start"><strong>Este campo se puede omitir</strong> </span>
 
                                     </div>
-                                    <div class="row   campo-final ">
-                                        <div class="col-6 ">
-                                            <fa-icon [icon]="['fas', 'camera']" class="box-icon"></fa-icon>
+                                    <div class=" row campo-final ">
+                                        <div class="col-4 text-end ">
+                                            <fa-icon [icon]="[ 'fas', 'camera'] " class="box-icon bg-white p-4 pt-0 pb-3 rounded-circle "></fa-icon>
                                         </div>
-                                        <div class="col-6 ">
+                                        <div class="col-8 d-flex justify-content-start text-start ">
                                             <ul>
-                                                <li>Nombre y Apellido</li>
-                                                <li>Mail</li>
-                                                <li>Nacimiento</li>
-                                                <li>Ciudad</li>
-                                                <li>Direccion</li>
-                                                <li>Metodo de pago</li>
-                                                <li>
-                                                    <fa-icon [icon]="['fas', 'camera']" class="box-icon"></fa-icon>
+                                                <li>Nombre y Apellido: <span>{{Nombre}} {{Apellido}}</span>
                                                 </li>
+                                                <li>Mail: <span>{{Mail}}</span></li>
+                                                <li>Nacimiento: <span>{{Nacimiento}}</span></li>
+                                                <li>Ciudad: <span>{{Ciudad}}</span> </li>
+                                                <li>Direccion: <span>{{Direccion}}</span> </li>
+                                                <li>Metodo de pago:<span>{{MetododePago}}</span>
+                                                    <div class="row">
+                                                        <p class="badge p-2 badge-busqueda mt-3">M.pago1</p>
+                                                        <p class="badge p-2 badge-busqueda mt-3">M.pago2</p>
+
+                                                    </div>
+                                                </li>
+
                                             </ul>
                                         </div>
                                     </div>

@@ -1,0 +1,95 @@
+img {
+    max-width: 100%
+}
+
+.badge-busqueda {
+    width: fit-content;
+    font-size: 1rem;
+    color: #262626;
+    margin: .5rem;
+    background-color: #43A9A3;
+}
+
+.text-card {
+    font-size: 21px;
+}
+
+.star {
+    color: #EA9A00;
+}
+
+.boton {
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #1F5754;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.botonCancelar {
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #FD3F3F;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.cora {
+    font-size: 25px;
+    margin: 10px;
+    border: none;
+    width: 90px;
+    height: 64px;
+    background: #EAEDED;
+    color: #FD3F3F;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 12px;
+}
+
+// aaaaaaaaaaaaaaaaaaseparador
+#staticBackdrop * {
+    color: #317D78;
+}
+
+.fondoscuro {
+    background-color: #D1D1D1;
+}
+
+.modal-title {
+    font-size: 2rem !important;
+    // text-transform: uppercase;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+// p {
+//     font-size: .75rem;
+//     opacity: .8;
+// }
+.btnModal {
+    background-color: #317D78;
+    color: #E5FFCB;
+    font-size: 1.2rem;
+    box-shadow: #6B6B6B;
+}

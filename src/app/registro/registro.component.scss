@@ -16,6 +16,21 @@ html {
     color: white;
 }
 
+li {
+    list-style: none;
+}
+
+ul li {
+    text-decoration: none;
+    color: #E5FFCB;
+    font-size: 21px;
+    padding-left: 2rem;
+}
+
+ul li span {
+    color: #ffffff;
+}
+
 .boton {
     margin-left: 10px;
     margin-right: 10px;
@@ -79,8 +94,9 @@ input {
 .campo-final {
     display: flex;
     justify-content: center;
+    height: 16rem;
     // max-width: 400px;
-    background-color: red;
+    // background-color: red;
 }
 
 .card {
@@ -199,4 +215,12 @@ input {
 .box-icon {
     font-size: 90px;
     color: #43A9A3;
+}
+
+.badge-busqueda {
+    width: fit-content;
+    font-size: 1rem;
+    color: #262626;
+    margin: .5rem;
+    background-color: #43A9A3;
 }
