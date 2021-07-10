@@ -1,10 +1,10 @@
 <div class="container">
     <div class="row d-flex col-11 mx-auto">
         <app-carrousel class="my-5"></app-carrousel>
-        <app-card-anfitrion class="mb-5" [routerLink]="['/detalle']"></app-card-anfitrion>
+        <app-card-anfitrion class="mb-5" [routerLink]="['/']"></app-card-anfitrion>
         <div class="mb-5">
             <p class="mb-2 subtitle">No dejes pasar esta oferta:</p>
-            <app-card-producto-busqueda [lugar]="valorados[0][0]"></app-card-producto-busqueda>
+            <app-card-producto-busqueda [lugar]="valorados[0][0]" [routerLink]="['/detalle']"></app-card-producto-busqueda>
         </div>
         <div class="mb-5">
             <p class="mb-2 subtitle">Lugares mejor valorados:</p>

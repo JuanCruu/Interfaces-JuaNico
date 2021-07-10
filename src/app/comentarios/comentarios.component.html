@@ -1,7 +1,7 @@
 <div class="container mt-5 mb-5">
     <div class="card">
         <div class="card-body">
-            <h3 class="card-title">Comentarios</h3>
+            <h3 class="card-title">Preguntas</h3>
 
         </div>
         <div class="d-flex justify-content-center row">
@@ -10,11 +10,11 @@
                 <div class="coment-bottom bg-white ">
                     <div class="d-flex flex-row justify-content-center align-items-center mt-4 mb-4  ">
                         <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="https://i.imgur.com/qdiP4DB.jpg" width="50">
-                        <input type="text" class="form-control  mr-3" placeholder="Escribi tu pregunta...">
-                        <button class="btn btn-primary boton" type="button">Comentar</button>
+                        <input type="text" class="form-control  mr-3" placeholder="Escribi tu pregunta..." [ngModel]="idComentario" (ngModelChange)="changeInput($event)">
+                        <button class="btn btn-primary boton" type="button" (click)="comentar()">Comentar</button>
                     </div>
                     <!-- comentario -->
-                    <div class="d-flex flex-row comment-row box-resenia ">
+                    <div class="d-flex flex-row comment-row box-resenia " *ngFor="let comentario of comentarios">
                         <div class=" ">
                             <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="https://i.imgur.com/qdiP4DB.jpg" width="50">
                         </div>
@@ -22,17 +22,17 @@
                         <div class="comment-text w-100">
                             <div class="d-flex">
                                 <div class="col-6">
-                                    <h6 class=" text-card fw-bold">Pedro</h6>
-                                    <div class="comment-footer"> <span class="date">febrero de 2020</span> </div>
+                                    <h6 class=" text-card fw-bold">{{comentario.nombre}}</h6>
+                                    <div class="comment-footer"> <span class="date">{{comentario.fecha}}</span> </div>
                                 </div>
 
                             </div>
-                            <p class=" text-card">Cuanto el kilo? </p>
+                            <p class=" text-card">{{comentario.comentario}}</p>
                         </div>
 
                     </div>
                     <!-- asdsd -->
-                    <div class="d-flex flex-row comment-row box-resenia mt-2 ">
+                    <!-- <div class="d-flex flex-row comment-row box-resenia mt-2 ">
                         <div class=" ">
                             <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="https://i.imgur.com/qdiP4DB.jpg" width="50">
                         </div>
@@ -46,7 +46,7 @@
                             </div>
                             <p class=" text-card">María es muy atenta y siempre disponible para resolver cualquier situación, durante mi estancia tuve un inconveniente con la puerta de ingreso y lo pudimos solucionar UWU</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
