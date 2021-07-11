@@ -40,12 +40,10 @@ ul li span {
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
     background: #1F5754;
     border-radius: 12px;
-    // font-family: Secular One;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 24px;
-    /* identical to box height, or 109% */
     text-align: center;
     letter-spacing: -0.011em;
     text-transform: capitalize;
@@ -53,16 +51,11 @@ ul li span {
 }
 
 label {
-    // font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 24px;
-    /* identical to box height, or 171% */
-    // display: flex;
-    // align-items: center;
     letter-spacing: -0.011em;
-    /* verde manzana -2 */
     color: #E5FFCB;
 }
 
@@ -95,8 +88,6 @@ input {
     display: flex;
     justify-content: center;
     height: 16rem;
-    // max-width: 400px;
-    // background-color: red;
 }
 
 .card {
@@ -133,22 +124,18 @@ input {
 }
 
 #progressbar #account:before {
-    // font-family: "Font Awesome 5 Free";
     content: "1"
 }
 
 #progressbar #personal:before {
-    // font-family: FontAwesome;
     content: "2"
 }
 
 #progressbar #payment:before {
-    // font-family: FontAwesome;
     content: "3"
 }
 
 #progressbar #confirm:before {
-    // font-family: FontAwesome;
     content: "4"
 }
 

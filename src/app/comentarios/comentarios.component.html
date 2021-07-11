@@ -16,7 +16,7 @@
                     <!-- comentario -->
                     <div class="d-flex flex-row comment-row box-resenia " *ngFor="let comentario of comentarios">
                         <div class=" ">
-                            <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="https://i.imgur.com/qdiP4DB.jpg" width="50">
+                            <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="{{comentario.imagen}}" width="50">
                         </div>
 
                         <div class="comment-text w-100">
@@ -31,22 +31,7 @@
                         </div>
 
                     </div>
-                    <!-- asdsd -->
-                    <!-- <div class="d-flex flex-row comment-row box-resenia mt-2 ">
-                        <div class=" ">
-                            <img class="img-fluid img-responsive rounded-circle mr-2 imagen-comentar" src="https://i.imgur.com/qdiP4DB.jpg" width="50">
-                        </div>
-                        <div class="comment-text w-100">
-                            <div class="d-flex">
-                                <div class="col-6">
-                                    <h6 class=" text-card fw-bold">Pedro</h6>
-                                    <div class="comment-footer"> <span class="date">febrero de 2020</span> </div>
-                                </div>
 
-                            </div>
-                            <p class=" text-card">María es muy atenta y siempre disponible para resolver cualquier situación, durante mi estancia tuve un inconveniente con la puerta de ingreso y lo pudimos solucionar UWU</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>

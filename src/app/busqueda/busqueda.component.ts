@@ -67,8 +67,16 @@ export class BusquedaComponent implements OnInit {
   ];
 
   busquedas: string[] = [];
-
-  constructor(private searchService: SearchService) { }
+  spin:boolean=false;
+  constructor(private searchService: SearchService) { 
+    
+  
+    setTimeout(()=>{ 
+      this.spin=true; 
+    
+    }, 2000);
+  
+  }
 
   ngOnInit(): void {
     if(this.getSearch()[0] != "")

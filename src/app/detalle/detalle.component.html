@@ -1,100 +1,101 @@
-<div class="container  mt-5">
+<app-spinner></app-spinner>
+<div *ngIf="spin==true">
+    <div class="container  mt-5">
 
-    <div class="row justify-content-center mt-2">
-        <div class="col-6 ">
-            <h1 class="pl-0   ">Departamento entero - Mar del las almas perdidas</h1>
-            <p class="badge p-2 badge-busqueda mt-3">Con Agua </p>
-            <p class="badge p-2 badge-busqueda mt-3">2 Personas </p>
-            <p class="badge p-2 badge-busqueda mt-3">Aire Acondicionado</p>
-            <p class="badge p-2 badge-busqueda mt-3">2 Baños </p>
-            <p class="badge p-2 badge-busqueda mt-3">Wi-Fi </p>
-            <p class="badge p-2 badge-busqueda mt-3">Acceso a la playa </p>
-            <p class="badge p-2 badge-busqueda mt-3">Estacionamiento Gratuito</p>
-            <p class="badge p-2 badge-busqueda mt-3">1 Dormitorio</p>
-            <p class="badge p-2 badge-busqueda mt-3">Pileta</p>
-        </div>
-        <div class="col-6  ">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://i.imgur.com/jREOTKN.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.imgur.com/W0VJm15.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://i.imgur.com/gi8F029.jpeg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row justify-content-center mt-2">
+            <div class="col-6 ">
+                <h1 class="pl-0   ">Departamento entero - Mar del las almas perdidas</h1>
+                <p class="badge p-2 badge-busqueda mt-3">Con Agua </p>
+                <p class="badge p-2 badge-busqueda mt-3">2 Personas </p>
+                <p class="badge p-2 badge-busqueda mt-3">Aire Acondicionado</p>
+                <p class="badge p-2 badge-busqueda mt-3">2 Baños </p>
+                <p class="badge p-2 badge-busqueda mt-3">Wi-Fi </p>
+                <p class="badge p-2 badge-busqueda mt-3">Acceso a la playa </p>
+                <p class="badge p-2 badge-busqueda mt-3">Estacionamiento Gratuito</p>
+                <p class="badge p-2 badge-busqueda mt-3">1 Dormitorio</p>
+                <p class="badge p-2 badge-busqueda mt-3">Pileta</p>
             </div>
-            <!-- <div class="w-100 mr-4">
-                <img src="https://i.imgur.com/IO7gSOE.png" alt="">
-
-            </div> -->
-        </div>
-        <div class="row m-4">
-            <div class="col-8">
-                <h2>
-                    Detalle:
-                </h2>
-                <p class=" text-card">
-                    Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona
-                    residencial y tranquila para unos días de relax en la cuidad! nunc sed viverra.
-                </p>
-            </div>
-            <div class="col-4 text-end justify-content-end">
-                <h2>
-                    Valoracion:
-                </h2>
-                <div class="comment-footer   text-end">
-                    <span class="action-icons">
-                        <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
-                        <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
-                        <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
-                        <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
-                        <fa-icon [icon]="[ 'far', 'star'] "  class="star"></fa-icon>
-                     </span>
-                </div>
-                <div class="d-flex mt-2 text-end justify-content-end">
-                    <h2 class="precio">
-                        $2.400
-                    </h2>
-                    <p class="mt-2 font-weight-bold mx-2"> /noche</p>
-                </div>
-
-                <div class=" text-end justify-content-end mt-3 row align-items-center">
-                    <button class="cora">
-                        <fa-icon [icon]="[ 'far', 'heart'] "  ></fa-icon>
+            <div class="col-6  ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.imgur.com/jREOTKN.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/W0VJm15.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.imgur.com/gi8F029.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="boton" data-bs-toggle="modal" data-bs-target="#Alquilar"> Alquilar</button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+            <div class="row m-4">
+                <div class="col-8">
+                    <h2>
+                        Detalle:
+                    </h2>
+                    <p class=" text-card">
+                        Te va a encantar mi espacio por la ubicación, las vistas, el ambiente, y las zonas exteriores. Mi alojamiento es bueno para parejas, aventureros, y viajeros de negocios. Se encuentra cerca de las playas y del centro comercial ( guemes y alem) es una zona
+                        residencial y tranquila para unos días de relax en la cuidad! nunc sed viverra.
+                    </p>
+                </div>
+                <div class="col-4 text-end justify-content-end">
+                    <h2>
+                        Valoracion:
+                    </h2>
+                    <div class="comment-footer   text-end">
+                        <span class="action-icons">
+                            <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
+                            <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
+                            <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
+                            <fa-icon [icon]="[ 'fas', 'star'] "  class="star"></fa-icon>
+                            <fa-icon [icon]="[ 'far', 'star'] "  class="star"></fa-icon>
+                         </span>
+                    </div>
+                    <div class="d-flex mt-2 text-end justify-content-end">
+                        <h2 class="precio">
+                            $2.400
+                        </h2>
+                        <p class="mt-2 font-weight-bold mx-2"> /noche</p>
+                    </div>
+
+                    <div class=" text-end justify-content-end mt-3 row align-items-center">
+                        <button class="cora">
+                            <fa-icon [icon]="[ 'far', 'heart'] "  ></fa-icon>
+                        </button>
+                        <button class="boton" data-bs-toggle="modal" data-bs-target="#Alquilar"> Alquilar</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-9">
+            <div class="row">
+                <div class="col-9">
+
+                </div>
 
             </div>
 
+
         </div>
-
-
     </div>
+    <app-resenia></app-resenia>
+    <app-comentarios></app-comentarios>
 </div>
-<app-resenia></app-resenia>
-<app-comentarios></app-comentarios>
+
 <!-- Modal -->
 <div class="modal fade" id="Alquilar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

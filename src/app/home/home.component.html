@@ -1,4 +1,6 @@
-<div class="container">
+<app-spinner></app-spinner>
+
+<div class="container" *ngIf="spin==true">
     <div class="row d-flex col-11 mx-auto">
         <app-carrousel class="my-5"></app-carrousel>
         <app-card-anfitrion class="mb-5" [routerLink]="['/']"></app-card-anfitrion>

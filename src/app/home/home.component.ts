@@ -145,8 +145,13 @@ export class HomeComponent implements OnInit {
       imagen:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9HVAI54Su_nQRYM_X-PRgpvJ4FN6ozw5BA&usqp=CAU"
     }
   ];
-  
-  constructor() { }
+  spin:boolean=false;
+  constructor() { 
+    setTimeout(()=>{ 
+      this.spin=true; 
+    
+    }, 2000);
+  }
 
   ngOnInit(): void {
   }

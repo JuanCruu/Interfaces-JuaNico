@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detalle.component.scss']
 })
 export class DetalleComponent implements OnInit {
-
-  constructor() { }
+  spin=false;
+  constructor() {
+    setTimeout(()=>{ 
+      this.spin=true; 
+    
+    }, 2000);
+   }
 
   ngOnInit(): void {
   }

@@ -19,7 +19,10 @@ export class CardProductoBusquedaComponent implements OnInit {
     tipo: ''
   };
   
-  constructor() { }
+  
+  constructor() { 
+  
+  }
 
   ngOnInit(): void {
   }

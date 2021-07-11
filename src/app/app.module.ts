@@ -23,6 +23,8 @@ import { ReseniaComponent } from './resenia/resenia.component';
 import { ComentariosComponent } from './comentarios/comentarios.component';
 import { RegistroComponent } from './registro/registro.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+import { SpinnerBusquedaComponent } from './spinner-busqueda/spinner-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { LogInComponent } from './log-in/log-in.component';
     ReseniaComponent,
     ComentariosComponent,
     RegistroComponent,
-    LogInComponent
+    LogInComponent,
+    SpinnerComponent,
+    SpinnerBusquedaComponent
   ],
   imports: [
     BrowserModule,

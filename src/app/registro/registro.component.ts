@@ -18,7 +18,13 @@ export class RegistroComponent implements OnInit {
 
    bar=document.getElementById('progressbar');
    
-  constructor() { }
+   spin:boolean=false;
+  constructor() { 
+    setTimeout(()=>{ 
+      this.spin=true; 
+    
+    }, 2000);
+  }
   
   ngOnInit(): void {
   }
