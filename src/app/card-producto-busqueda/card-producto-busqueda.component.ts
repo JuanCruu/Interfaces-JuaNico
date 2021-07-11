@@ -18,13 +18,16 @@ export class CardProductoBusquedaComponent implements OnInit {
     oferta: false,
     tipo: ''
   };
-  
+  favorite=false
   
   constructor() { 
   
   }
 
   ngOnInit(): void {
+  }
+  favorito(){
+    this.favorite=!this.favorite
   }
 
 }

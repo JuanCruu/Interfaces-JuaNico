@@ -14,15 +14,15 @@
                 <div class="carousel-inner double">
                     <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
                         <div class="d-flex justify-content-around">
-                            <app-card [lugar]="lugar[0]" class="mx-3" [routerLink]="['/detalle']"></app-card>
-                            <app-card [lugar]="lugar[1]" class="mx-3" [routerLink]="['/detalle']"></app-card>
+                            <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
+                            <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-inner simple">
                     <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of lugares; let i=index">
                         <div class="d-flex justify-content-around">
-                            <app-card [lugar]="lugar" class="mx-3" [routerLink]="['/detalle']"></app-card>
+                            <app-card [lugar]="lugar" class="mx-3"></app-card>
                         </div>
                     </div>
                 </div>

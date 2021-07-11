@@ -48,3 +48,37 @@ img {
 .star {
     color: #EA9A00;
 }
+
+.coraAnimation {
+    -webkit-animation-name: pulso;
+    animation-name: pulso;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    // animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulso {
+    0% {
+        font-size: 35px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}
+
+@keyframes pulso {
+    0% {
+        font-size: 35px;
+    }
+    50% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 30px;
+    }
+}

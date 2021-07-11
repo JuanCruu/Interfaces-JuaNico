@@ -4,7 +4,7 @@
 
         <div class="row justify-content-center mt-2">
             <div class="col-6 ">
-                <h1 class="pl-0   ">Departamento entero - Mar del las almas perdidas</h1>
+                <h1 class="pl-0   ">Departamento entero - Mar del Plata</h1>
                 <p class="badge p-2 badge-busqueda mt-3">Con Agua </p>
                 <p class="badge p-2 badge-busqueda mt-3">2 Personas </p>
                 <p class="badge p-2 badge-busqueda mt-3">Aire Acondicionado</p>
@@ -75,10 +75,13 @@
                     </div>
 
                     <div class=" text-end justify-content-end mt-3 row align-items-center">
-                        <button class="cora">
+                        <button class="cora coraAnimation" *ngIf="!favorite" id="noF" (click)="favorito()">
                             <fa-icon [icon]="[ 'far', 'heart'] "  ></fa-icon>
                         </button>
-                        <button class="boton" data-bs-toggle="modal" data-bs-target="#Alquilar"> Alquilar</button>
+                        <button class="cora coraAnimation " *ngIf="favorite" id="siF" (click)="favorito()">
+                            <fa-icon [icon]="[ 'fas', 'heart'] "  ></fa-icon>
+                        </button>
+                        <button class="boton" data-bs-toggle="modal" data-bs-target="#Alquilar" id="alquilarD"> {{boton}}</button>
                     </div>
                 </div>
             </div>
@@ -101,7 +104,7 @@
     <div class="modal-dialog">
         <div class="modal-content fondoscuro">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Alquilar "Mar del las almas perdidas"</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Alquilar "Departamento entero - Mar del Plata"</h5>
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
             <div class="modal-body">
@@ -131,8 +134,9 @@
                 </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn button btnModal" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class=" btn button btnModal">Alquilar</button>
+                <button type="button" class="btn boton btnModal" data-bs-dismiss="modal">Cancelar</button>
+
+                <button type="button" class=" btn boton btnModal" data-bs-dismiss="modal" id="alquilar" (click)="animate()"> {{boton}}</button>
             </div>
         </div>
     </div>

@@ -1,11 +1,17 @@
 <div class="card col">
-    <img [src]="lugar.imagen" alt="" class="card-img-top">
-    <div class="card-img-overlay d-flex justify-content-end">
-        <div class="heartCircle">
-            <fa-icon [icon]="['far', 'heart']" class="heart text-center"></fa-icon>
+    <img [src]="lugar.imagen" alt="" class="card-img-top" [routerLink]="['/detalle']">
+    <div class="position-absolute w-100 d-flex justify-content-end">
+
+        <div class="heartCircle  m-3" *ngIf="!favorite">
+            <fa-icon [icon]="['far', 'heart']" class="heart text-center coraAnimation" (click)="favorito()"></fa-icon>
         </div>
+
+        <div class="heartCircle  m-3" *ngIf="favorite">
+            <fa-icon [icon]="['fas', 'heart']" class="heart text-center coraAnimation" (click)="favorito()"></fa-icon>
+        </div>
+
     </div>
-    <div class="card-body pt-0 pb-0 mb-0">
+    <div class="card-body pt-0 pb-0 mb-0" [routerLink]="['/detalle']">
         <div class="row">
             <div class="col-10 col-sm-12">
                 <h5 class="card-title mt-2 ">{{lugar.titulo}}</h5>
