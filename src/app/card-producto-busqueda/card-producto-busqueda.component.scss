@@ -10,6 +10,27 @@ p {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     cursor: pointer;
+    filter: grayscale(.8);
+    transition: ease-in-out .15s;
+    overflow: hidden;
+}
+
+.card:hover {
+    z-index: 100;
+    filter: none;
+}
+
+.box-hover {
+    max-width: 65%;
+    position: absolute;
+    bottom: -10%;
+    visibility: hidden;
+    transition: ease-in-out .2s;
+}
+
+.card:hover .box-hover {
+    bottom: 5%;
+    visibility: visible;
 }
 
 .heartCircle {

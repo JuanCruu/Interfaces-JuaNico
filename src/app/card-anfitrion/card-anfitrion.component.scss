@@ -54,3 +54,14 @@ p {
     font-size: 1rem;
     color: #6B6B6B;
 }
+
+button:hover {
+    background-color: #E5FFCB !important;
+    color: #232F3E;
+    transition: ease-in-out .1s;
+}
+
+a:hover {
+    color: #262626;
+    transition: ease-in-out .1s;
+}
