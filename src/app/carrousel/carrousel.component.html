@@ -1,6 +1,6 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item" [ngClass]="{'active': contador==1}">
             <div class="side-bar col-2 fondoscuro h-100 rounded-end d-flex flex-column">
                 <h5 class="text-light w-100 mx-2 my-3">Peru</h5>
                 <p class="text-light mw-90 mx-2">Deleitate con los lugares mas pintorescos y turisticos de Peru. Visita desde Machu Picchu hasta la ciudad de Lima, degustando todo tipo de comidas.</p>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" [ngClass]="{'active': contador == 2}">
             <div class="side-bar col-2 fondoscuro h-100 rounded-end d-flex flex-column">
                 <h5 class="text-light w-100 mx-2 my-3">Argentina</h5>
                 <p class="text-light mw-90 mx-2">Deleitate con los lugares mas pintorescos y turisticos de Argentina. Visita desde Ushuaia hasta la ciudad de Buenos Aires, degustando todo tipo de comidas.</p>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" [ngClass]="{'active': contador == 3}">
             <div class="side-bar col-2 fondoscuro h-100 rounded-end d-flex flex-column">
                 <h5 class="text-light w-100 mx-2 my-3">Brasil</h5>
                 <p class="text-light mw-90 mx-2">Deleitate con los lugares mas pintorescos y turisticos de Brasil. Visita desde el Amazonas hasta la ciudad de Sao Paulo, degustando todo tipo de comidas.</p>
