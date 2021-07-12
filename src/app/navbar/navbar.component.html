@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg back-nav">
     <div class="container-fluid">
-        <a class="navbar-brand item-nav col-1 d-flex justify-content-center box-icon" href="#" [routerLink]="['/']">
-            <fa-icon [icon]="['fab', 'airbnb']"></fa-icon>
+        <a class="navbar-brand item-nav col-1 d-flex justify-content-center" href="#" [routerLink]="['/']">
+            <fa-icon class="box-icon" [icon]="['fab', 'airbnb']"></fa-icon>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -22,10 +22,10 @@
                     </a>
                 </li>
                 <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
-                    <a class="nav-link active bg-secondary rounded btn-reg" aria-current="page" [routerLink]="['/registro']">Registrarse</a>
+                    <a class="nav-link active bg-secondary rounded" aria-current="page" [routerLink]="['/registro']">Registrarse</a>
                 </li>
                 <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
-                    <a class="nav-link active bg-dark rounded btn-log" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesion</a>
+                    <a class="nav-link active bg-dark rounded" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesion</a>
                 </li>
                 <li class="nav-item dropdown item-nav m-auto" *ngIf=userLogged>
                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,14 +71,14 @@
                 </div>
                 <div class="row my-3">
                     <div class="col d-flex justify-content-center">
-                        <button type="button" class="btn p-1 col-3 text-center btn-log" (click)="login()" data-bs-dismiss="modal">Ingresar</button>
+                        <button type="button" class="btn p-1 col-3 text-center" (click)="login()" data-bs-dismiss="modal">Ingresar</button>
                     </div>
                     <div class="col-11 my-2 mx-auto">
                         <p class="my-0 p-0 text-center">Si aun no tenes una cuenta</p>
                         <hr class="my-0 p-0 dropdown-divider w-100">
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <button type="button" class="btn p-1 col-3 text-center btn-reg" [routerLink]="['/registro']">Registrate</button>
+                        <button type="button" class="btn p-1 col-3 text-center" [routerLink]="['/registro']">Registrate</button>
                     </div>
                 </div>
             </div>

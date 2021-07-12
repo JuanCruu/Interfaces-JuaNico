@@ -5,12 +5,6 @@
     cursor: pointer;
 }
 
-.card:hover {
-    z-index: 100;
-    transition: ease-in-out .1s;
-    transform: perspective(400px) translateZ(20px);
-}
-
 .heartCircle {
     display: flex;
     justify-content: center;
