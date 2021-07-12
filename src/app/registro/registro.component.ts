@@ -36,6 +36,5 @@ export class RegistroComponent implements OnInit {
     this.step--;
   }
   finish(){
-    alert('a')
   }
 }

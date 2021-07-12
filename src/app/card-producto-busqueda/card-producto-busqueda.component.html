@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <p class="card-text max-height">{{lugar.descripcion}}</p>
-                <div class="mt-auto row d-flex">
+                <div class="mt-auto row d-flex box-hover w-100">
                     <div class="d-flex col-4 mt-auto">
                         <div *ngFor="let star of lugar.valoracion">
                             <fa-icon [icon]="['fas', 'star']" *ngIf="star==true" class="star"></fa-icon>
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="col mb-0 pb-0 my-auto">
-                        <div class="d-flex justify-content-end">
+                        <div class="d-flex justify-content-end float-end">
                             <h4 class="text-end my-auto price" *ngIf="!lugar.oferta">{{lugar.precio|currency}}</h4>
                             <span class="text-end my-auto" *ngIf="!lugar.oferta">/noche</span>
                         </div>

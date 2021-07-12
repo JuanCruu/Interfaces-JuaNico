@@ -3,8 +3,6 @@
     <div class="row justify-content-center mt-0">
         <div class="col-11 col-sm-9 col-md-7 col-lg-6 text-center p-0 mt-3 mb-2 ">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3 box">
-                <!-- <h2><strong>Registre su cuenta de usuario</strong></h2>
-                <p>Complete todo el campo del formulario para ir al siguiente paso</p> -->
                 <div class="row ">
                     <div class="col-md-12 mx-0">
                         <form>
@@ -17,7 +15,6 @@
                                 <li id="confirm" [ngClass]="{'active':step>=4}"><strong>finalizar</strong></li>
                             </ul>
                             <div class=" ">
-
                                 <!-- paso 1 -->
                                 <fieldset *ngIf="step==1 ">
                                     <div class="form-card ">
@@ -25,13 +22,11 @@
                                             <h2 class="mx-auto card-title "><strong>Datos para iniciar sesion</strong></h2>
                                         </div>
                                         <div class="row justify-content-around ">
-
                                             <div class="col-6 ">
                                                 <label for="nombre " class="col-8 text-start ">Nombre</label>
                                                 <input type="text " id="nombre " class="col-8 " name="uname " />
                                             </div>
                                             <div class="col-6 ">
-
                                                 <label for="nombre " class="col-8 text-start ">Apellido</label>
                                                 <input type=" text " id="Apellido " class="col-8 " name="uname " />
                                             </div>
@@ -42,23 +37,19 @@
                                         </div>
                                         <div class="row col-10 d-flex mx-auto ">
                                             <label for="contra" class="col-8 text-start ">Contraseña
-                                            <span class="dalee"> <fa-icon [icon]="['fas', 'question-circle']"  > </fa-icon> </span>
-                                            
-                                        
-                                        </label>
+                                                <fa-icon [icon]="['fas', 'question-circle']" title="Minimo 8 caracteres."></fa-icon>
+                                            </label>
                                             <input type="password" name="pwd " id="contra " />
                                         </div>
                                         <div class="mt-4 ">
-                                            <button class="boton" (click)="next() ">Siguiente</button>
+                                            <button class="boton boton-siguiente" (click)="next() ">Siguiente</button>
                                         </div>
                                     </div>
                                 </fieldset>
-
                                 <!-- paso2? -->
                                 <fieldset *ngIf="step==2 ">
                                     <div class="form-card ">
                                         <div class="titulo-card pb-5 ">
-
                                             <h2 class="mx-auto "><strong>Datos personales</strong></h2>
                                         </div>
                                         <div class="row justify-content-around ">
@@ -77,32 +68,19 @@
                                                 <input type="text" id="nombre " class="col-8 " name="uname " />
                                             </div>
                                             <div class="col-6 ">
-
                                                 <label for="nombre " class="col-8 text-start ">Cod.Postal</label>
                                                 <input type="number" id="Apellido " class="col-8 " name="uname " />
                                             </div>
                                         </div>
                                         <div class="row col-10 d-flex mx-auto ">
-                                            <label for="contra " class="col-8 text-start ">Contraseña
-                                                <span>
-                                                
-                                                    <fa-icon [icon]="['fas', 'question-circle']" class="contraSimbolo> "> </fa-icon>
-                                                </span>
-                                            </label>
-                                            <input type="password" name="pwd " id="contra " />
+                                            <label for="contra " class="col-8 text-start ">Direccion</label>
+                                            <input type="text" name="pwd " id="contra " />
                                         </div>
-
                                     </div>
                                     <div class="row justify-content-center ">
-
                                         <div class="row d-flex justify-content-between col-10 mt-4 ">
-                                            <button class="boton mx-0 " (click)="back() ">Atras</button>
-                                            <button class="boton mx-0 " (click)="next() ">Siguiente</button>
-
-                                            <!-- <div class="col-6 mt-4 ">
-                                            </div>
-                                            <div class="col-6 mt-4 ">
-                                            </div> -->
+                                            <button class="boton mx-0 boton-back" (click)="back() ">Atras</button>
+                                            <button class="boton mx-0 boton-siguiente" (click)="next() ">Siguiente</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -111,59 +89,43 @@
                                         <div class="titulo-card pb-4 ">
                                             <h2><strong>Informacion de pago</strong></h2>
                                             <span><strong>Este campo se puede omitir</strong> </span>
-
                                         </div>
                                         <div class="row justify-content-around ">
                                             <div class="row col-10 d-flex mx-auto ">
                                                 <label for="contra " class="col-8 text-start ">Titular</label>
                                                 <input class="form-control " type="text " name="pwd " id="contra " />
                                             </div>
-
                                             <div class="row col-10 d-flex mx-auto ">
                                                 <label for="contra " class="col-8 text-start ">Numero de Tarjeta</label>
                                                 <input type="number" name="pwd " id="contra " />
                                             </div>
                                             <div class="row justify-content-around ">
-
                                                 <div class="col-6 ">
                                                     <label for="nombre " class="col-8 text-start ">Vencimiento</label>
                                                     <input type="date" id="nombre " class="col-8 " name="uname " />
                                                 </div>
                                                 <div class="col-6 ">
-
                                                     <label for="nombre " class="col-8 text-start ">CVV</label>
                                                     <input type="number" id="Apellido " class="col-8 " name="uname " placeholder="Ejemplo 123" />
                                                 </div>
                                             </div>
-
                                         </div>
-
                                     </div>
                                     <div class="row justify-content-center ">
-
                                         <div class="row d-flex justify-content-between col-10 mt-4 ">
-                                            <button class="boton mx-0 " (click)="back() ">Atras</button>
-                                            <button class="boton mx-0 " (click)="next() ">Siguiente</button>
-
-                                            <!-- <div class="col-6 mt-4 ">
-                                            </div>
-                                            <div class="col-6 mt-4 ">
-                                            </div> -->
+                                            <button class="boton mx-0 boton-back" (click)="back() ">Atras</button>
+                                            <button class="boton mx-0 boton-siguiente" (click)="next() ">Siguiente</button>
                                         </div>
-
                                     </div>
                                 </fieldset>
-
-
                                 <fieldset *ngIf="step==4 ">
                                     <div class="titulo-card pb-4 ">
                                         <h2><strong>Solo falta que agregues una foto</strong></h2>
                                         <span class="justify-content-start"><strong>Este campo se puede omitir</strong> </span>
-
                                     </div>
                                     <div class=" row campo-final ">
                                         <div class="col-4 text-end ">
-                                            <fa-icon [icon]="[ 'fas', 'camera'] " class="box-icon bg-white p-4 pt-0 pb-3 rounded-circle "></fa-icon>
+                                            <fa-icon [icon]="[ 'fas', 'camera'] " class="box-icon icon-back p-4 pt-0 pb-3 rounded-circle "></fa-icon>
                                         </div>
                                         <div class="col-8 d-flex justify-content-start text-start ">
                                             <ul>
@@ -177,31 +139,20 @@
                                                     <div class="row">
                                                         <p class="badge p-2 badge-busqueda mt-3">M.pago1</p>
                                                         <p class="badge p-2 badge-busqueda mt-3">M.pago2</p>
-
                                                     </div>
                                                 </li>
-
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="row justify-content-center ">
-
                                         <div class="row d-flex justify-content-between col-10 mt-4 ">
-                                            <button class="boton mx-0 " (click)="back() ">Atras</button>
-                                            <button class="boton mx-0 " (click)="finish() ">Finalizar</button>
-
-                                            <!-- <div class="col-6 mt-4 ">
-                                            </div>
-                                            <div class="col-6 mt-4 ">
-                                            </div> -->
+                                            <button class="boton mx-0 boton-back" (click)="back() ">Atras</button>
+                                            <button class="boton mx-0 boton-siguiente" (click)="finish()" [routerLink]="['/']">Finalizar</button>
                                         </div>
-
                                     </div>
-
                                 </fieldset>
                             </div>
                             <!-- fieldsets -->
-
                         </form>
                     </div>
                 </div>

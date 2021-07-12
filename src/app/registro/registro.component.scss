@@ -9,6 +9,7 @@ html {
 
 .fondo {
     background-image: url(https://i.imgur.com/r7xxRBb.png);
+    background-size: cover;
 }
 
 .box {
@@ -38,7 +39,6 @@ ul li span {
     width: 181px;
     height: 64px;
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
-    background: #1F5754;
     border-radius: 12px;
     font-style: normal;
     font-weight: normal;
@@ -48,6 +48,21 @@ ul li span {
     letter-spacing: -0.011em;
     text-transform: capitalize;
     color: #FFFFFF;
+    transition: ease-in-out .1s;
+}
+
+.boton-siguiente {
+    background: #1F5754;
+}
+
+.boton-back {
+    background: #FD3F3F;
+}
+
+.boton-siguiente:hover,
+.boton-back:hover {
+    background-color: #E5FFCB;
+    color: #2C3E50;
 }
 
 label {
@@ -210,4 +225,13 @@ input {
     color: #262626;
     margin: .5rem;
     background-color: #43A9A3;
+}
+
+fa-icon {
+    font-size: large;
+    color: #E5FFCB !important;
+}
+
+.icon-back {
+    background-color: #1F5754 !important;
 }

@@ -2,8 +2,21 @@
     background-color: #1F5754;
 }
 
+.nav-item {
+    border-radius: 10px;
+}
+
 .item-nav * {
     color: #E5FFCB;
+}
+
+.nav-item:hover {
+    transition: ease-in-out .1s;
+    background-color: #E5FFCB;
+}
+
+.nav-item:hover * {
+    color: #1F5754 !important;
 }
 
 .item-deco {
@@ -61,6 +74,13 @@ button {
     color: #E5FFCB !important;
     font-size: 1.2rem;
     box-shadow: #6B6B6B;
+}
+
+.btn-reg:hover,
+.btn-log:hover {
+    background-color: #E5FFCB !important;
+    color: #232F3E !important;
+    transition: ease-in-out .1s;
 }
 
 @media (max-width: 600px) {
