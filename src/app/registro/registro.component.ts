@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class RegistroComponent implements OnInit {
    step=1;
 
-   Nombre="Gonzales";
-   Apellido="Gonzales";
-   Mail="@gonza.mail";
-   Nacimiento=13;
-   Ciudad="alguna";
-   Direccion="estrada laprida";
-   MetododePago="s";
+   Nombre="Nombre";
+   Apellido="Apellido";
+   Mail="mail@mail";
+   Nacimiento='12/07/2021';
+   Ciudad="Bolivar";
+   Direccion="Estrada Laprida";
+   MetododePago="";
 
    bar=document.getElementById('progressbar');
    

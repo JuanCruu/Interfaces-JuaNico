@@ -2,7 +2,7 @@
 
     <div class="row mt-3 mb-2">
         <h1>Resultados <span [ngClass]="{'d-none' : busquedas.length === 0}">de</span>:</h1>
-        <p class="badge badge-busqueda mt-3" [ngClass]="{'invisible' : busquedas.length === 0}" *ngFor="let busqueda of busquedas">{{busqueda}} <span class="text-light delete-filter" (click)="remove(busqueda)">X</span></p>
+        <p class="badge badge-busqueda mt-3" [ngClass]="{'invisible' : busquedas.length === 0}" *ngFor="let busqueda of busquedas">{{busqueda}} <span class="delete-filter" (click)="remove(busqueda)">X</span></p>
     </div>
     <section class="col-3 filtros">
         <p class="filter-title mt-2 ml-2">Filtros:</p>

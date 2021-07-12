@@ -1,10 +1,9 @@
 <app-spinner></app-spinner>
 <div *ngIf="spin==true">
-    <div class="container  mt-5">
-
+    <div class="container mt-5">
         <div class="row justify-content-center mt-2">
-            <div class="col-6 ">
-                <h1 class="pl-0   ">Departamento entero - Mar del Plata</h1>
+            <div class="col-6">
+                <h1 class="pl-0">Departamento entero - Mar del Plata</h1>
                 <p class="badge p-2 badge-busqueda mt-3">Con Agua </p>
                 <p class="badge p-2 badge-busqueda mt-3">2 Personas </p>
                 <p class="badge p-2 badge-busqueda mt-3">Aire Acondicionado</p>
@@ -87,18 +86,13 @@
             </div>
             <div class="row">
                 <div class="col-9">
-
                 </div>
-
             </div>
-
-
         </div>
     </div>
     <app-resenia></app-resenia>
     <app-comentarios></app-comentarios>
 </div>
-
 <!-- Modal -->
 <div class="modal fade" id="Alquilar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -134,8 +128,7 @@
                 </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn boton btnModal" data-bs-dismiss="modal">Cancelar</button>
-
+                <button type="button" class="btn boton btnModal botonCancelar" data-bs-dismiss="modal">Cancelar</button>
                 <button type="button" class=" btn boton btnModal" data-bs-dismiss="modal" id="alquilar" (click)="animate()"> {{boton}}</button>
             </div>
         </div>

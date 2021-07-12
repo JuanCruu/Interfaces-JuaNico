@@ -46,12 +46,24 @@ input {
     color: #F9F9F9 !important;
 }
 
+.btn-aplicar:hover {
+    transition: ease-in-out .2s;
+    background-color: #43A9A3;
+    color: #000022 !important;
+}
+
 span label {
     font-weight: 300;
 }
 
 .delete-filter {
     cursor: pointer;
+    color: #fff;
+}
+
+.delete-filter:hover {
+    transition: ease-in-out .1s;
+    color: #FD3F3F !important;
 }
 
 .slideInRight {

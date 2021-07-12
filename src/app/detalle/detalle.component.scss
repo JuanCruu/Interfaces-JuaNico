@@ -44,21 +44,22 @@ img {
     color: #FFFFFF;
 }
 
+.boton:hover {
+    filter: none;
+    transition: ease-in-out .2s;
+    background-color: #43A9A3;
+    color: #000;
+}
+
 .botonCancelar {
-    border: none;
-    width: 181px;
-    height: 64px;
-    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
-    background: #FD3F3F;
-    border-radius: 12px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.011em;
-    text-transform: capitalize;
-    color: #FFFFFF;
+    background-color: #FD3F3F !important;
+}
+
+.botonCancelar:hover {
+    filter: none;
+    transition: ease-in-out .2s;
+    background-color: #da0000 !important;
+    color: #fff !important;
 }
 
 .cora {
@@ -71,6 +72,12 @@ img {
     color: #FD3F3F;
     filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
     border-radius: 12px;
+}
+
+.cora:hover {
+    filter: none;
+    transition: ease-in-out .2s;
+    background-color: #43A9A3;
 }
 
 // aaaaaaaaaaaaaaaaaaseparador
