@@ -8,7 +8,6 @@ import { Espacio } from '../Espacios';
   styleUrls: ['./busqueda.component.scss']
 })
 export class BusquedaComponent implements OnInit {
-
   lugares: Espacio[] = [
     {
       titulo: "Departamento entero",
@@ -69,7 +68,6 @@ export class BusquedaComponent implements OnInit {
   busquedas: string[] = [];
   spin:boolean=false;
   constructor(private searchService: SearchService) { 
-    
   
     setTimeout(()=>{ 
       this.spin=true; 
@@ -104,4 +102,5 @@ export class BusquedaComponent implements OnInit {
     this.busquedas.indexOf(e);
     this.busquedas = this.busquedas.filter(busqueda => busqueda !== e);
   }
+  
 }

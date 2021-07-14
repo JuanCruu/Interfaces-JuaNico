@@ -18,10 +18,9 @@ export class CardProductoBusquedaComponent implements OnInit {
     oferta: false,
     tipo: ''
   };
-  favorite=false
-  
+  favorite=false;
   constructor() { 
-  
+      
   }
 
   ngOnInit(): void {
@@ -29,5 +28,4 @@ export class CardProductoBusquedaComponent implements OnInit {
   favorito(){
     this.favorite=!this.favorite
   }
-
 }
