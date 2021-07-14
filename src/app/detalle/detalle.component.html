@@ -74,11 +74,13 @@
                     </div>
 
                     <div class=" text-end justify-content-end mt-3 row align-items-center">
-                        <button class="cora coraAnimation" *ngIf="!favorite" id="noF" (click)="favorito()">
-                            <fa-icon [icon]="[ 'far', 'heart'] "  ></fa-icon>
-                        </button>
-                        <button class="cora coraAnimation " *ngIf="favorite" id="siF" (click)="favorito()">
-                            <fa-icon [icon]="[ 'fas', 'heart'] "  ></fa-icon>
+                        <button class="cora" id="noF" (click)="favorito()">
+                            <div class="coraAnimation" *ngIf="!favorite">
+                                <fa-icon [icon]="[ 'far', 'heart'] " ></fa-icon>
+                            </div>
+                            <div class="coraAnimation" *ngIf="favorite">
+                                <fa-icon [icon]="[ 'fas', 'heart'] " ></fa-icon>
+                            </div>
                         </button>
                         <button class="boton" data-bs-toggle="modal" data-bs-target="#Alquilar" id="alquilarD"> {{boton}}</button>
                     </div>

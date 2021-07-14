@@ -1,102 +1,102 @@
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .badge-busqueda {
-  width: fit-content;
-  font-size: 1rem;
-  color: #262626;
-  margin: 0.5rem;
-  background-color: #43a9a3;
+    width: fit-content;
+    font-size: 1rem;
+    color: #262626;
+    margin: 0.5rem;
+    background-color: #43a9a3;
 }
 
 .text-card {
-  font-size: 21px;
+    font-size: 21px;
 }
 
 .font-weight-bold {
-  font-weight: bold;
-  // color: #FD3F3F;
+    font-weight: bold;
+    // color: #FD3F3F;
 }
 
 .precio {
-  color: #1f5754;
+    color: #1f5754;
 }
 
 .star {
-  color: #ea9a00;
+    color: #ea9a00;
 }
 
 .boton {
-  border: none;
-  width: 181px;
-  height: 64px;
-  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
-  background: #1f5754;
-  border-radius: 12px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: -0.011em;
-  text-transform: capitalize;
-  color: #ffffff;
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #1f5754;
+    border-radius: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #ffffff;
 }
 
 .boton:hover {
-  filter: none;
-  transition: ease-in-out 0.2s;
-  background-color: #43a9a3;
-  color: #000;
+    filter: none;
+    transition: ease-in-out 0.2s;
+    background-color: #43a9a3;
+    color: #000;
 }
 
 .botonCancelar {
-  background-color: #fd3f3f !important;
+    background-color: #fd3f3f !important;
 }
 
 .botonCancelar:hover {
-  filter: none;
-  transition: ease-in-out 0.2s;
-  background-color: #da0000 !important;
-  color: #fff !important;
+    filter: none;
+    transition: ease-in-out 0.2s;
+    background-color: #da0000 !important;
+    color: #fff !important;
 }
 
 .cora {
-  font-size: 25px;
-  margin: 10px;
-  border: none;
-  width: 90px;
-  height: 64px;
-  background: #eaeded;
-  color: #fd3f3f;
-  filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
-  border-radius: 12px;
+    font-size: 25px;
+    margin: 10px;
+    border: none;
+    width: 90px;
+    height: 64px;
+    background: #eaeded;
+    color: #fd3f3f;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    border-radius: 12px;
 }
 
 .cora:hover {
-  filter: none;
-  transition: ease-in-out 0.2s;
-  background-color: #43a9a3;
+    filter: none;
+    transition: ease-in-out 0.2s;
+    background-color: #43a9a3;
 }
 
 // aaaaaaaaaaaaaaaaaaseparador
 #staticBackdrop * {
-  color: #317d78;
+    color: #317d78;
 }
 
 .fondoscuro {
-  background-color: #d1d1d1;
+    background-color: #d1d1d1;
 }
 
 .modal-title {
-  font-size: 2rem !important;
-  // text-transform: uppercase;
+    font-size: 2rem !important;
+    // text-transform: uppercase;
 }
 
 label {
-  font-size: 1rem;
-  font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 // p {
@@ -104,99 +104,117 @@ label {
 //     opacity: .8;
 // }
 .btnModal {
-  background-color: #317d78;
-  color: #e5ffcb;
-  font-size: 1.2rem;
-  box-shadow: #6b6b6b;
+    background-color: #317d78;
+    color: #e5ffcb;
+    font-size: 1.2rem;
+    box-shadow: #6b6b6b;
 }
 
 .coraAnimation {
-  -webkit-animation-name: pulso;
-  animation-name: pulso;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-  // animation-delay: 2s;
-  animation-fill-mode: both;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-animation-name: flip;
+    animation-name: flip;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
-@-webkit-keyframes pulso {
-  0% {
-    font-size: 35px;
-  }
-  50% {
-    font-size: 10px;
-  }
-  100% {
-    font-size: 25px;
-  }
+@-webkit-keyframes flip {
+    0% {
+        -webkit-transform: perspective(600px) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(600px) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(600px) scale3d(.95, .95, .95);
+        transform: perspective(600px) scale3d(.95, .95, .95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: perspective(600px);
+        transform: perspective(600px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
 }
 
-@keyframes pulso {
-  0% {
-    font-size: 35px;
-  }
-  50% {
-    font-size: 10px;
-  }
-  100% {
-    font-size: 25px;
-  }
+@keyframes flip {
+    0% {
+        -webkit-transform: perspective(600px) rotate3d(0, 1, 0, -360deg);
+        transform: perspective(600px) rotate3d(0, 1, 0, -360deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    40% {
+        -webkit-transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        -webkit-transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        transform: perspective(600px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    80% {
+        -webkit-transform: perspective(600px) scale3d(.95, .95, .95);
+        transform: perspective(600px) scale3d(.95, .95, .95);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    100% {
+        -webkit-transform: perspective(600px);
+        transform: perspective(600px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
 }
 
 .Addgradient {
-  -webkit-animation-name: gradient;
-  animation-name: gradient;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: both;
-  // animation-delay: 2s;
-  animation-fill-mode: both;
+    -webkit-animation-name: gradient;
+    animation-name: gradient;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    // animation-delay: 2s;
+    animation-fill-mode: both;
 }
 
 @keyframes gradient {
-  0% {
-    background: radial-gradient(
-      circle at center,
-      rgba(60, 182, 70, 0) 0%,
-      #fff 0%,
-      #fff 100%
-    );
-  }
-  25% {
-    background: radial-gradient(
-      circle at center,
-      rgba(60, 182, 70, 0.3) 24%,
-      #fff 25%,
-      #fff 100%
-    );
-  }
-  50% {
-    font-size: 15px;
-    background: radial-gradient(
-      circle at center,
-      rgba(60, 182, 70, 0.5) 49%,
-      #fff 50%,
-      #fff 100%
-    );
-  }
-  75% {
-    font-size: 30px;
-    background: radial-gradient(
-      circle at center,
-      rgba(60, 182, 70, 0.8) 74%,
-      #fff 75%,
-      #fff 100%
-    );
-  }
-  100% {
-    font-size: 22px;
-    color: #e5ffcb;
-    background: radial-gradient(
-      circle at center,
-      #087bda 99%,
-      #fff 100%,
-      #fff 100%
-    );
-  }
+    0% {
+        background: radial-gradient( circle at center, rgba(60, 182, 70, 0) 0%, #fff 0%, #fff 100%);
+    }
+    25% {
+        background: radial-gradient( circle at center, rgba(60, 182, 70, 0.3) 24%, #fff 25%, #fff 100%);
+    }
+    50% {
+        font-size: 15px;
+        background: radial-gradient( circle at center, rgba(60, 182, 70, 0.5) 49%, #fff 50%, #fff 100%);
+    }
+    75% {
+        font-size: 30px;
+        background: radial-gradient( circle at center, rgba(60, 182, 70, 0.8) 74%, #fff 75%, #fff 100%);
+    }
+    100% {
+        font-size: 22px;
+        color: #e5ffcb;
+        background: radial-gradient( circle at center, #087bda 99%, #fff 100%, #fff 100%);
+    }
 }

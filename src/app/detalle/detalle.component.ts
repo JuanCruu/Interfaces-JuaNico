@@ -16,9 +16,7 @@ export class DetalleComponent implements OnInit {
     }, 2000);
    }
    favorito(){
-    
      this.favorite = !this.favorite;
-
    }
    animate(){
      document.getElementById("alquilar")?.classList.add("Addgradient")
