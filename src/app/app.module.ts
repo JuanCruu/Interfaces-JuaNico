@@ -25,6 +25,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { SpinnerBusquedaComponent } from './spinner-busqueda/spinner-busqueda.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SpinnerBusquedaComponent } from './spinner-busqueda/spinner-busqueda.co
     RegistroComponent,
     LogInComponent,
     SpinnerComponent,
-    SpinnerBusquedaComponent
+    SpinnerBusquedaComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

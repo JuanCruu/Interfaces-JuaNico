@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DetalleComponent implements OnInit {
   spin=false;
   favorite=false;
+  alquilado = false;
   boton="Alquilar";
   constructor() {
     setTimeout(()=>{ 
@@ -19,9 +20,10 @@ export class DetalleComponent implements OnInit {
      this.favorite = !this.favorite;
    }
    animate(){
-     document.getElementById("alquilar")?.classList.add("Addgradient")
-     document.getElementById("alquilarD")?.classList.add("Addgradient")
-     this.boton="Alquilado"
+     document.getElementById("alquilar")?.classList.add("Addgradient");
+     document.getElementById("alquilarD")?.classList.add("Addgradient");
+    this.alquilado = true;
+     this.boton="Consultando...";
     }
   ngOnInit(): void {
   }

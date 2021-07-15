@@ -99,15 +99,17 @@ label {
     font-weight: 400;
 }
 
-// p {
-//     font-size: .75rem;
-//     opacity: .8;
-// }
 .btnModal {
     background-color: #317d78;
     color: #e5ffcb;
     font-size: 1.2rem;
     box-shadow: #6b6b6b;
+}
+
+.waiting {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #262626;
 }
 
 .coraAnimation {

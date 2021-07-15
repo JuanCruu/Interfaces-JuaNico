@@ -103,7 +103,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Alquilar "Departamento entero - Mar del Plata"</h5>
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
             </div>
-            <div class="modal-body">
+            <div class="modal-body" *ngIf="!alquilado">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Telefono</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -129,9 +129,14 @@
                     </div>
                 </div>
             </div>
+            <div class="mx-auto my-2 col-11" *ngIf="alquilado">
+                <p class="waiting">
+                    Parece que estas esperando una respuesta, por favor vuelve a intentarlo en unos minutos.
+                </p>
+            </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn boton btnModal botonCancelar" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class=" btn boton btnModal" data-bs-dismiss="modal" id="alquilar" (click)="animate()"> {{boton}}</button>
+                <button type="button" class=" btn boton btnModal" [ngClass]="{'disabled': alquilado}" data-bs-dismiss="modal" id="alquilar" (click)="animate()"> {{boton}}</button>
             </div>
         </div>
     </div>
